@@ -40,7 +40,7 @@ const Books = async ({ params }: { params: Promise<{ dir: string }> }) => {
   })
 
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full py-12 flex items-center justify-center">
       <BookTable data={data} />
     </div>
   )
