@@ -67,7 +67,6 @@ export const BookTable = ({ data }: { data: BookData[] }) => {
                   <TableCell key={columnKey.key}>
                     <div className="relative flex justify-end items-center gap-2">
                       <Link
-                        isExternal
                         showAnchorIcon
                         anchorIcon={<Eye size={24} />}
                         href={`/books/${item.dir}/${item.name}`}

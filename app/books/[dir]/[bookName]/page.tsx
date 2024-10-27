@@ -15,7 +15,7 @@ const BookShow = async ({
 
   if (fileType === 'pdf') {
     return (
-      <div className="flex w-full pb-4 h-full justify-center items-center">
+      <div className="flex w-full py-4 h-full justify-center items-center">
         <iframe
           className="w-4/5 h-full rounded-md"
           src={`https://g.alicdn.com/teambition/pdfviewer/1.2.0/index.html?file=${fileUrl}`}
