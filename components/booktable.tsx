@@ -19,7 +19,7 @@ export const BookTable = ({ data }: { data: BookData[] }) => {
     { key: 'name', label: 'NAME' },
     { key: 'size', label: 'SIZE' },
     { key: 'updateTime', label: 'UPDATE TIME' },
-    { key: 'action', label: 'DOWNLOAD' },
+    { key: 'actions', label: 'ACTIONS' },
   ]
   const realData: BookData[] = []
 
@@ -65,7 +65,7 @@ export const BookTable = ({ data }: { data: BookData[] }) => {
               } else {
                 return (
                   <TableCell key={columnKey.key}>
-                    <div className="relative flex justify-end items-center gap-2">
+                    <div className="relative flex justify-start items-center gap-2">
                       <Link
                         showAnchorIcon
                         anchorIcon={<Eye size={24} />}
