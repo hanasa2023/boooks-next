@@ -6,7 +6,7 @@ import { BookTable } from '@/components/booktable'
 import { BookData } from '@/types'
 
 const getBookData = async (dir: string) => {
-  const res = await ossClient.listDir(`${dir}/`)
+  const res = await ossClient.listDir(`${decodeURIComponent(dir)}/`)
 
   return res.objects
 }
