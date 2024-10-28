@@ -2,6 +2,8 @@ import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
 import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
 
+import { siteConfig } from '@/config/site'
+
 export default function Home() {
   return (
     <div className="bg-home-bg bg-cover w-full h-full p-6 flex justify-center items-center">
@@ -13,6 +15,14 @@ export default function Home() {
           <p>一个为HEU 15系服务的资源网站。不定期更新……</p>
           <div className="my-2" />
           <p className="text-2xl text-primary-700">📝 更新日志</p>
+          <Divider className="my-4" />
+          <p className="text-xl">2024/10/29</p>
+          <div className="my-2" />
+          <ul>
+            <li className="list-disc">
+              - 💄 新增菜单底部链接，搜索框（目前不可用）
+            </li>
+          </ul>
           <Divider className="my-4" />
           <p className="text-xl">2024/10/28</p>
           <div className="my-2" />
@@ -44,11 +54,7 @@ export default function Home() {
           </ul>
         </CardBody>
         <CardFooter className="w-full items-center justify-center gap-3">
-          <Link
-            isExternal
-            showAnchorIcon
-            href="mailto:hanasakayui2022@gmail.com"
-          >
+          <Link isExternal showAnchorIcon href={siteConfig.links.mail}>
             遇到问题？联系所有者
           </Link>
         </CardFooter>

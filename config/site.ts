@@ -4,10 +4,10 @@ export const siteConfig = {
   name: 'Boooks',
   description: '一个为HEU 15系服务的资源网站。',
   links: {
-    github: 'https://github.com/nextui-org/nextui',
-    twitter: 'https://twitter.com/getnextui',
+    github: 'https://github.com/hanasa2023/boooks-next',
+    twitter: 'https://twitter.com/hanasaka2023',
     docs: 'https://nextui.org',
-    discord: 'https://discord.gg/9b6yyZKmH4',
-    sponsor: 'https://patreon.com/jrgarciadev',
+    sponsor: 'https://ifdian.net/a/hanasaki_',
+    mail: 'mailto:hanasakayui2022@gmail.com',
   },
 }
