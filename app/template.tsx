@@ -2,8 +2,8 @@ import { Link } from '@nextui-org/link'
 import { Divider } from '@nextui-org/divider'
 
 import { Navbar } from '@/components/navbar'
-import { SideMenu } from '@/components/SideMenu'
-import { SideMenuProvider } from '@/components/SideMenuContext'
+import { SideMenu } from '@/components/side-menu'
+import { SideMenuProvider } from '@/components/side-menu-context'
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (

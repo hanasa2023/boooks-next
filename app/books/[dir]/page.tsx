@@ -2,7 +2,7 @@ import React from 'react'
 import { ObjectMeta } from 'ali-oss'
 
 import { ossClient } from '@/utils/Client'
-import { BookTable } from '@/components/booktable'
+import { BookTable } from '@/components/book-table'
 import { BookData } from '@/types'
 
 const getBookData = async (dir: string) => {

@@ -8,7 +8,8 @@ import { Button } from '@nextui-org/button'
 import { useRouter } from 'next/navigation'
 
 import { BoooksLogo, MenuIcon } from '@/components/icons'
-import { useSideMenu } from '@/components/SideMenuContext'
+import { useSideMenu } from '@/components/side-menu-context'
+import { SearchInput } from '@/components/search-input'
 
 export const Navbar = () => {
   const { toggleSideMenu } = useSideMenu()
@@ -19,6 +20,9 @@ export const Navbar = () => {
       <NavbarBrand>
         <BoooksLogo onClick={() => router.push('/')} />
       </NavbarBrand>
+      <NavbarContent justify="center">
+        <SearchInput />
+      </NavbarContent>
       <NavbarContent justify="end">
         {/*<ThemeSwitch />*/}
         <Button
