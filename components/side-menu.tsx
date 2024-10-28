@@ -31,7 +31,6 @@ export const SideMenu = () => {
   ])
 
   useEffect(() => {
-    ossClient.listAllFiles('').then()
     ossClient.listDir('').then((res: ListObjectResult) => {
       const titles: string[] = navItems.current!.map((v: NavItem) => v.title)
 
