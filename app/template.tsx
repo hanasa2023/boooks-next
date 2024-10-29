@@ -2,8 +2,8 @@ import { Link } from '@nextui-org/link'
 import { Divider } from '@nextui-org/divider'
 
 import { Navbar } from '@/components/navbar'
-import { SideMenu } from '@/components/side-menu'
-import { SideMenuProvider } from '@/components/side-menu-context'
+import { Drawer } from '@/components/drawer'
+import { SideMenuProvider } from '@/components/drawer-context'
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
@@ -13,7 +13,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
           <Navbar />
           <div className="flex flex-grow relative">
             <main className="w-full">{children}</main>
-            <SideMenu />
+            <Drawer />
           </div>
         </SideMenuProvider>
         <footer className="w-full z-50 flex flex-row items-center justify-center py-1 bg-primary-300">

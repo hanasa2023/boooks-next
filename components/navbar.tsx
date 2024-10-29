@@ -8,7 +8,7 @@ import { Button } from '@nextui-org/button'
 import { useRouter } from 'next/navigation'
 
 import { BoooksLogo, MenuIcon } from '@/components/icons'
-import { useSideMenu } from '@/components/side-menu-context'
+import { useSideMenu } from '@/components/drawer-context'
 import { SearchInput } from '@/components/search-input'
 
 export const Navbar = () => {

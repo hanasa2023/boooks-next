@@ -13,7 +13,7 @@ import {
   HeartFilledIcon,
   HomeIcon,
 } from '@/components/icons'
-import { useSideMenu } from '@/components/side-menu-context'
+import { useSideMenu } from '@/components/drawer-context'
 import { siteConfig } from '@/config/site'
 
 interface NavItem {
@@ -21,7 +21,7 @@ interface NavItem {
   href: string
 }
 
-export const SideMenu = () => {
+export const Drawer = () => {
   const { isSideMenuOpen, toggleSideMenu } = useSideMenu()
   const iconClasses =
     'text-xl text-default-500 pointer-events-none flex-shrink-0'

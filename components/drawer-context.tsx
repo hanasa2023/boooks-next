@@ -6,7 +6,7 @@ interface SideMenuContextProps {
   toggleSideMenu: () => void
 }
 
-const SideMenuContext = createContext<SideMenuContextProps | null>(null)
+const Drawer = createContext<SideMenuContextProps | null>(null)
 
 export const SideMenuProvider = ({
   children,
@@ -20,14 +20,14 @@ export const SideMenuProvider = ({
   }
 
   return (
-    <SideMenuContext.Provider value={{ isSideMenuOpen, toggleSideMenu }}>
+    <Drawer.Provider value={{ isSideMenuOpen, toggleSideMenu }}>
       {children}
-    </SideMenuContext.Provider>
+    </Drawer.Provider>
   )
 }
 
 export const useSideMenu = () => {
-  const context = useContext(SideMenuContext)
+  const context = useContext(Drawer)
 
   if (context === null) {
     throw new Error('useSideMenu must be used within a SideMenuProvider')
