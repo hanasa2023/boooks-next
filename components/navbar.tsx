@@ -16,7 +16,7 @@ export const Navbar = () => {
   const router = useRouter()
 
   return (
-    <NextUINavbar isBordered className="bg-primary-400" maxWidth="full">
+    <NextUINavbar isBordered className="bg-primary-400 z-50" maxWidth="full">
       <NavbarBrand>
         <BoooksLogo onClick={() => router.push('/')} />
       </NavbarBrand>

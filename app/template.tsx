@@ -16,7 +16,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <SideMenu />
           </div>
         </SideMenuProvider>
-        <footer className="w-full flex flex-row items-center justify-center py-1 bg-primary-300">
+        <footer className="w-full z-50 flex flex-row items-center justify-center py-1 bg-primary-300">
           <Link
             isExternal
             className="flex items-center gap-1 text-current"
