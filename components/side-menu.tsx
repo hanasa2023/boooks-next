@@ -52,7 +52,7 @@ export const SideMenu = () => {
       {isSideMenuOpen ? (
         <div
           aria-label="overlay"
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 cursor-default"
           role="button"
           tabIndex={0}
           onClick={toggleSideMenu}

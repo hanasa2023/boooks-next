@@ -16,6 +16,12 @@ export default function Home() {
           <div className="my-2" />
           <p className="text-2xl text-primary-700">📝 更新日志</p>
           <Divider className="my-4" />
+          <p className="text-xl">2024/10/30</p>
+          <div className="my-2" />
+          <ul>
+            <li className="list-disc">- ✨ 实现搜索框功能</li>
+          </ul>
+          <Divider className="my-4" />
           <p className="text-xl">2024/10/29</p>
           <div className="my-2" />
           <ul>

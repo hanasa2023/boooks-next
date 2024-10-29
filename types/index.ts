@@ -11,3 +11,8 @@ export interface BookData {
   url: string
   updateTime: string
 }
+
+export interface FileData {
+  name: string
+  dir: string
+}

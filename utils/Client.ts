@@ -1,5 +1,7 @@
 import OSS, { ListObjectResult, ObjectMeta } from 'ali-oss'
 
+import { FileData } from '@/types'
+
 class OssClient {
   private _client: OSS = new OSS({
     region: 'oss-cn-shanghai',
@@ -23,10 +25,10 @@ class OssClient {
     }
   }
 
-  async listAllFiles(dir: string): Promise<string[]> {
+  async listAllFiles(dir: string): Promise<FileData[]> {
     try {
       const subDir: string[] = []
-      const files: string[] = []
+      const files: FileData[] = []
       const result = await this._client.list(
         {
           prefix: dir,
@@ -49,7 +51,11 @@ class OssClient {
           _r.objects.forEach((obj: ObjectMeta) => {
             const _f = obj.name.replace(_d, '')
 
-            if (_f !== '') files.push(_f)
+            if (_f !== '')
+              files.push({
+                name: _f,
+                dir: _d,
+              })
           })
         }
       }
