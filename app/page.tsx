@@ -20,6 +20,7 @@ export default function Home() {
           <div className="my-2" />
           <ul>
             <li className="list-disc">- ✨ 实现搜索框功能</li>
+            <li className="list-disc">- ✨ 新增工程流体力学书籍</li>
           </ul>
           <Divider className="my-4" />
           <p className="text-xl">2024/10/29</p>
